@@ -1,4 +1,9 @@
 const http = require('http')
+const {
+    notFound,
+    isUrlWithId,
+    getIdFromUrl,
+} = require('./utils')
 const { 
     getProducts, 
     getProduct, 
@@ -7,16 +12,11 @@ const {
 
 const server = http.createServer((req, res) => {
 
-    function notFound() {
-        res.writeHead(404, { 'Content-Type': 'application/json' })
-        res.end(JSON.stringify({ message: 'route not found' }))
-    }
-
     switch (req.method) {
         case 'GET':
             req.url === '/api/products' ? getProducts(req, res)
 
-                : req.url.match(/\/api\/products\/([0-9]+)/) ? getProduct(req, res, req.url.split('/')[3])
+                : isUrlWithId(req.url) ? getProduct(req, res, getIdFromUrl(req.url))
 
                     : notFound()
             break
