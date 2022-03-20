@@ -14,7 +14,7 @@ You need to have [NodeJS](https://nodejs.org/en/) installed.
 
 ## Version control (git)
 
-- Progress is divided into different branches. They're named starting with a number, for example `1-project-setup`
+- Progress is chronologically divided into different branches. They're named starting with a number, for example `1-project-setup`
 
 ## Tools
 
