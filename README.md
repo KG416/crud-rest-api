@@ -1,6 +1,6 @@
 # Vanilla node REST API
 
-A node rest api using no external frameworks or libraries. 
+A CRUD rest api using *node.js*, *nodemon* & *uuid*.
 
 ## Prerequisites
 
@@ -16,11 +16,15 @@ You need to have [NodeJS](https://nodejs.org/en/) installed.
 
 - Progress is divided into different branches. They're named starting with a number, for example `1-project-setup`
 
-## Frameworks
+## Tools
 
 ### Nodemon
 
-The tool [nodemon](https://www.npmjs.com/package/nodemon) is used to avoid having to restart the node server after making changes.
+[Nodemon](https://www.npmjs.com/package/nodemon) is used to avoid having to restart the node server after making changes.
+
+### uuid
+
+[uuid](https://www.npmjs.com/package/uuid) helps us create id's.
 
 ## Code organisation
 

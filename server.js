@@ -1,5 +1,9 @@
 const http = require('http')
-const { getProducts, getProduct } = require('./controllers/productController')
+const { 
+    getProducts, 
+    getProduct, 
+    createProduct 
+} = require('./controllers/productController')
 
 const server = http.createServer((req, res) => {
 
@@ -17,7 +21,7 @@ const server = http.createServer((req, res) => {
                     : notFound()
             break
         case 'POST':
-            // create product
+            req.url === '/api/products' && createProduct(req, res)
             break
         default:
             console.log('not a valid request method')
