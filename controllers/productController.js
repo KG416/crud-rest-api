@@ -1,4 +1,5 @@
 const Product = require('../models/productModel')
+const { getPostData } = require('../utils')
 
 async function getProducts(req, res) {
     try {
@@ -30,14 +31,14 @@ async function getProduct(req, res, id) {
 
 async function createProduct(req, res) {
     try {
-       /*  const body = await getPostData(req)
+        const body = await getPostData(req)
 
-        const { name, description, price } = JSON.parse(body) */
+        const { name, description, price } = JSON.parse(body)
 
         const product = {
-            name: 'test-name',
-            description: 'test-desc',
-            price: 100
+            name,
+            description,
+            price
         }
 
         const newProduct = await Product.create(product)
