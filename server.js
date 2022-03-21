@@ -4,10 +4,11 @@ const {
     isUrlWithId,
     getIdFromUrl,
 } = require('./utils')
-const { 
-    getProducts, 
-    getProduct, 
-    createProduct 
+const {
+    getProducts,
+    getProduct,
+    createProduct,
+    updateProduct
 } = require('./controllers/productController')
 
 const server = http.createServer((req, res) => {
@@ -23,6 +24,8 @@ const server = http.createServer((req, res) => {
         case 'POST':
             req.url === '/api/products' && createProduct(req, res)
             break
+        case 'PUT':
+            isUrlWithId(req.url) && updateProduct(req, res, getIdFromUrl(req.url))
         default:
             console.log('not a valid request method')
     }

@@ -30,9 +30,9 @@
         "price": 49.99
     },
     {
-        "id": "4afee0da-00c9-460f-ba55-4b9c252046df",
-        "name": "test-name",
-        "description": "test-desc",
-        "price": 100
+        "id": "5413b01d-ea12-4dd4-83fe-4e3ab38d73f2",
+        "name": "updated name",
+        "description": "test-3",
+        "price": 13
     }
 ]
