@@ -8,7 +8,8 @@ const {
     getProducts,
     getProduct,
     createProduct,
-    updateProduct
+    updateProduct,
+    deleteProduct
 } = require('./controllers/productController')
 
 const server = http.createServer((req, res) => {
@@ -26,6 +27,9 @@ const server = http.createServer((req, res) => {
             break
         case 'PUT':
             isUrlWithId(req.url) && updateProduct(req, res, getIdFromUrl(req.url))
+            break
+        case 'DELETE':
+            isUrlWithId(req.url) && deleteProduct(req, res, getIdFromUrl(req.url))
         default:
             console.log('not a valid request method')
     }
