@@ -34,9 +34,11 @@ function update(id, product) {
 }
 
 async function remove(id) {
-    products = products.filter(p => p.id !== id)
-    writeDataToFile('./data/products.json', products)
-    resolve()
+   return new Promise((resolve, reject) => {
+       products = products.filter(p => p.id !== id)
+       writeDataToFile('./data/products.json', products)
+       resolve()
+   })
 }
 
 module.exports = {

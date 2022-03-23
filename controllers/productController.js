@@ -90,7 +90,7 @@ async function deleteProduct(req, res, id) {
         } else {
             await Product.remove(id)
             res.writeHead(200, { 'Content-Type': 'application/json' })
-            res.end(JSON.stringify({ message: `removed: ${product.name}` }))
+            res.end(JSON.stringify({ message: `removed ${product?.name} (id: ${id})` }))
         }
 
     } catch (err) {

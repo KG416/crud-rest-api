@@ -29,7 +29,8 @@ const server = http.createServer((req, res) => {
             isUrlWithId(req.url) && updateProduct(req, res, getIdFromUrl(req.url))
             break
         case 'DELETE':
-            isUrlWithId(req.url) && deleteProduct(req, res, getIdFromUrl(req.url))
+            isUrlWithId(req.url) && console.log('tjena'), deleteProduct(req, res, getIdFromUrl(req.url))
+            break
         default:
             console.log('not a valid request method')
     }
