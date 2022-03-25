@@ -1,6 +1,6 @@
 # Vanilla node REST API
 
-A CRUD rest api using *node.js*, *nodemon* & *uuid*.
+A CRUD rest api using no frameworks. Built with *node.js*, *nodemon* & *uuid*.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ You need to have [NodeJS](https://nodejs.org/en/) installed.
 
 ## Version control (git)
 
-- Progress is chronologically divided into different branches. They're named starting with a number, for example `1-project-setup`
+- Progress is chronologically divided into different branches. For example `1-project-setup` and `2-node-server`.
 
 ## Tools
 
@@ -24,13 +24,17 @@ You need to have [NodeJS](https://nodejs.org/en/) installed.
 
 ### uuid
 
-[uuid](https://www.npmjs.com/package/uuid) helps us create id's.
+[uuid](https://www.npmjs.com/package/uuid) is used for creating id's.
 
 ## Code organisation
 
-Code is organized with the following folders:
+The code is organized using the MVC pattern (minus view, not needed for this project). [What is MVC?](https://www.youtube.com/watch?v=DUg2SWWK18I&ab_channel=WebDevSimplified). The folder structure is as follows:
 
-- data - dummy data in the form of products
+- data - dummy json-data in the form of products
+
+- controllers
+
+- models
 
 ## Inspiration
 

@@ -46,8 +46,8 @@ async function createProduct(req, res) {
         res.writeHead(201, { 'Content-Type': 'application/json' })
         return res.end(JSON.stringify(newProduct))
 
-    } catch (error) {
-        console.log(error)
+    } catch (err) {
+        console.log(err)
     }
 }
 
@@ -75,8 +75,8 @@ async function updateProduct(req, res, id) {
             return res.end(JSON.stringify(updProduct))
         }  
 
-    } catch (error) {
-        console.log(error)
+    } catch (err) {
+        console.log(err)
     }
 }
 
