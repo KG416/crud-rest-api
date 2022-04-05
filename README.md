@@ -1,4 +1,4 @@
-# Vanilla node REST API
+# ☘️ Vanilla node REST API
 
 A CRUD rest api using no frameworks. Built with *node.js*, *nodemon* & *uuid*.
 
@@ -37,6 +37,8 @@ The code is organized using the MVC pattern (minus view, not needed for this pro
 - controllers
 
 - models
+
+- utils
 
 ## Inspiration
 
