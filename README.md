@@ -42,4 +42,4 @@ The code is organized using the MVC pattern (minus view, not needed for this pro
 
 ## Inspiration
 
-This project was created with inspiration from [Traversy Media](https://www.youtube.com/watch?v=_1xa8Bsho6A&ab_channel=TraversyMedia).
+This project was created with inspiration from [Traversy Media](https://www.traversymedia.com/).
